@@ -83,7 +83,7 @@ const isFullAge = ageSarah >= 18
 
 console.log(now - 1991 > now - 2018); // true
 */
-const now = 2024;
+const now = new Date().getFullYear();
 const ageJonas = now - 1991;
 const ageSarah = now - 1996;
 console.log(now - 1991 > now - 2018); // true
