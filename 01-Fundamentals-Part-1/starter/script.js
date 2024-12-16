@@ -1,5 +1,5 @@
 /**
- * 
+ *
 let js = 'amazing';
 
 // if (js === 'amazing') alert('Javascript is ' + js);
@@ -83,19 +83,75 @@ const isFullAge = ageSarah >= 18
 
 console.log(now - 1991 > now - 2018); // true
 */
-const now = new Date().getFullYear();
-const ageJonas = now - 1991;
-const ageSarah = now - 1996;
-console.log(now - 1991 > now - 2018); // true
+// const now = new Date().getFullYear();
+// const ageJonas = now - 1991;
+// const ageSarah = now - 1996;
+// console.log(now - 1991 > now - 2018); // true
 
 
 // Operator precedence can be found in:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence
 
-let x, y;
-x = y = 25 - 10 - 5; // 10
-console.log(x, y); // 10 10
+// let x, y;
+// x = y = 25 - 10 - 5; // 10
+// console.log(x, y); // 10 10
 
-// average age
-const average = (ageJonas + ageSarah) / 2;
-console.log(ageJonas, ageSarah, average);
+// // average age
+// const average = (ageJonas + ageSarah) / 2;
+// console.log(ageJonas, ageSarah, average);
+
+// const firstName = 'Jonas';
+// const lastName = 'Schemedtmann';
+// const job = 'teacher';
+// const birthYear = 1991;
+// const currentYear = new Date().getFullYear();
+
+// const john = "I'm " + firstName + " " + lastName + ', a ' + (currentYear - birthYear) + ' years old ' + job + '!';
+// console.log(john);
+
+// const jonasNew = `I'm ${firstName} ${lastName}, a ${currentYear - birthYear} years old ${job}!`;
+// console.log(jonasNew);
+
+// const age = 19;
+// const legalAge = 18;
+
+// if (age >= legalAge) {
+//     console.log('allowed 🚗');
+// } else {
+//     console.log('not allowed 🚫');
+// }
+
+// const inputYear = '1991';
+// console.log(Number(inputYear) + 18);
+// console.log(inputYear + 18);
+// console.log(Number('JOHN'));
+
+// // type coercion
+// console.log('I am ' + 29 + ' years old.');
+// console.log('23' - '10' - 3);
+// console.log('23' * 2);
+
+// let n = '1'+1;
+// n = n -1;
+// console.log(n);
+
+// const money = 0;
+// if (!money) {
+//     console.log('No Money!!!');
+// } else {
+//     console.log('Don\'t spend it all ;');
+// }
+
+// let height;
+// if (height) {
+//     console.log('height is defined');
+// } else {
+//     console.log('height is undefined');
+// }
+
+// const age = 18;
+// if (age === 18) {
+//     console.log('adult');
+// } else {
+//     console.log('not adult');
+// }
