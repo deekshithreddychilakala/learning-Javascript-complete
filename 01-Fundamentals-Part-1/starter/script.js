@@ -186,3 +186,6 @@ console.log(now - 1991 > now - 2018); // true
 //         console.log('A DaY');
 //         break;
 // }
+
+// const age = 23;
+// age >= 18 ? console.log('🥲') : console.log('🥸');
