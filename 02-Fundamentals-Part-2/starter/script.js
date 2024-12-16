@@ -74,7 +74,23 @@
 const friends = ['Micheal', 'Steven', 'Peter'];
 console.log(friends);
 
-const years = new Array(1991, 1984, 2008, 2020);
+// const years = new Array(1991, 1984, 2008, 2020);
 console.log(friends.at(0));
 console.log(friends.length);
 console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+
+const firstName = 'Michal';
+const jonas = [firstName, 'Schmedtmann', 2024 - 1991, 'teacher', friends];
+console.log(jonas)
+console.log(jonas.length)
+
+const calcAge = function (birthYear) {
+    return new Date().getFullYear() - birthYear;
+}
+
+const years = [1990, 1996, 1967, 2002, 2020, 2018];
+
+console.log(calcAge(years[1]));
