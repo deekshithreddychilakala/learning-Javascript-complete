@@ -155,3 +155,12 @@ console.log(now - 1991 > now - 2018); // true
 // } else {
 //     console.log('not adult');
 // }
+
+const favNum = prompt("what's your fav number");
+console.log(favNum);
+console.log(typeof favNum);
+if (favNum === 23) {
+    console.log('hi')
+} else {
+    console.log('hello')
+}
