@@ -95,31 +95,31 @@
 
 // console.log(calcAge(years[1]));
 
-const friends = ['Micheal', 'Steven', 'Peter'];
+// const friends = ['Micheal', 'Steven', 'Peter'];
 
-friends.push('Jay');
+// friends.push('Jay');
 
-friends.unshift('John')
-console.log(friends);
+// friends.unshift('John')
+// console.log(friends);
 
-// remove elements
-const popped = friends.pop();
-console.log(popped)
-console.log(friends);
+// // remove elements
+// const popped = friends.pop();
+// console.log(popped)
+// console.log(friends);
 
-friends.shift();
-console.log(friends);
+// friends.shift();
+// console.log(friends);
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('asf'));
+// console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('asf'));
 
-friends.push(23);
-console.log(friends.includes('Steven'));
-console.log(friends.includes('sdg'));
-console.log(friends.includes(23));
+// friends.push(23);
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('sdg'));
+// console.log(friends.includes(23));
 
-if (friends.includes('Peter')) {
-    console.log('Peter exists');
-} else {
-    console.log('No Peter')
-}
+// if (friends.includes('Peter')) {
+//     console.log('Peter exists');
+// } else {
+//     console.log('No Peter')
+// }
