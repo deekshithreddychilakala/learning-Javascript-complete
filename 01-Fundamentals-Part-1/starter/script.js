@@ -170,3 +170,6 @@ const hasGoodVision = false;
 console.log(hasDriversLicence && hasGoodVision)
 console.log(hasDriversLicence || hasGoodVision)
 console.log(!hasDriversLicence)
+
+const shouldDrive = hasDriversLicence && hasGoodVision;
+console.log(shouldDrive)
