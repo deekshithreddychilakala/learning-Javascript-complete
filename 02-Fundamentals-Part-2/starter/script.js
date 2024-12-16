@@ -156,3 +156,26 @@
 // jonas.location = 'Portugal';
 // jonas['twitter'] = '@jonasschmedtmann';
 // console.log(`jonas has ${jonas.friends.length} friends, and his bestfriend is called ${jonas.friends[0]}`)
+
+
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     birthYear: 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: false,
+//     calcAge: function () {
+//         this.age = new Date().getFullYear() - this.birthYear;
+//         return this.age;
+//     },
+//     getSummary: function () {
+//         this.summary = `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`;
+//         return this.summary;
+//     }
+// };
+
+// console.log(jonas.calcAge());
+// console.log(jonas['age']);
+
+// console.log(jonas.getSummary());
