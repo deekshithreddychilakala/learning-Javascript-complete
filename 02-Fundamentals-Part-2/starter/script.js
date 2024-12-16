@@ -32,17 +32,42 @@
 // console.log(fruitProcessor(2, 6));
 // console.log(fruitProcessor(5, 1));
 
-function calcAge1(birthYear) {
-    return new Date().getFullYear() - birthYear;
-}
+// function calcAge1(birthYear) {
+//     return new Date().getFullYear() - birthYear;
+// }
 
-const age1 = calcAge1(1996);
-console.log(age1);
+// const age1 = calcAge1(1996);
+// console.log(age1);
 
-const calcAge2 = function (birthYear) {
-    return new Date().getFullYear() - birthYear;
-}
+// const calcAge2 = function (birthYear) {
+//     return new Date().getFullYear() - birthYear;
+// }
 
-const age2 = calcAge2(1996);
+// const age2 = calcAge2(1996);
 
-console.log(age2);
+// console.log(age2);
+
+// const calcAge3 = birthYear => new Date().getFullYear() - birthYear;
+
+// console.log(calcAge3(1999));
+
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = calcAge3(1996);
+//     return `${firstName} retires in ${65 - age} years.`;
+// }
+
+// console.log(yearsUntilRetirement(1996, 'Deekshith'));
+
+// function curFruitPieces(fruit) {
+//     return fruit * 4;
+// }
+
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = curFruitPieces(apples);
+//     const orangePieces = curFruitPieces(oranges);
+//     const juice = `juice with ${applePieces} apple pieces and ${orangePieces} orange pieces.`;
+//     return juice;
+// }
+
+// console.log(fruitProcessor(2, 5));
+
