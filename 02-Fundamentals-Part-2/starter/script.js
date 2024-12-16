@@ -71,26 +71,55 @@
 
 // console.log(fruitProcessor(2, 5));
 
+// const friends = ['Micheal', 'Steven', 'Peter'];
+// console.log(friends);
+
+// // const years = new Array(1991, 1984, 2008, 2020);
+// console.log(friends.at(0));
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+
+// friends[2] = 'Jay';
+// console.log(friends);
+
+// const firstName = 'Michal';
+// const jonas = [firstName, 'Schmedtmann', 2024 - 1991, 'teacher', friends];
+// console.log(jonas)
+// console.log(jonas.length)
+
+// const calcAge = function (birthYear) {
+//     return new Date().getFullYear() - birthYear;
+// }
+
+// const years = [1990, 1996, 1967, 2002, 2020, 2018];
+
+// console.log(calcAge(years[1]));
+
 const friends = ['Micheal', 'Steven', 'Peter'];
+
+friends.push('Jay');
+
+friends.unshift('John')
 console.log(friends);
 
-// const years = new Array(1991, 1984, 2008, 2020);
-console.log(friends.at(0));
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
-
-friends[2] = 'Jay';
+// remove elements
+const popped = friends.pop();
+console.log(popped)
 console.log(friends);
 
-const firstName = 'Michal';
-const jonas = [firstName, 'Schmedtmann', 2024 - 1991, 'teacher', friends];
-console.log(jonas)
-console.log(jonas.length)
+friends.shift();
+console.log(friends);
 
-const calcAge = function (birthYear) {
-    return new Date().getFullYear() - birthYear;
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('asf'));
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('sdg'));
+console.log(friends.includes(23));
+
+if (friends.includes('Peter')) {
+    console.log('Peter exists');
+} else {
+    console.log('No Peter')
 }
-
-const years = [1990, 1996, 1967, 2002, 2020, 2018];
-
-console.log(calcAge(years[1]));
