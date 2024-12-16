@@ -165,11 +165,24 @@ console.log(now - 1991 > now - 2018); // true
 //     console.log('hello')
 // }
 
-const hasDriversLicence = true;
-const hasGoodVision = false;
-console.log(hasDriversLicence && hasGoodVision)
-console.log(hasDriversLicence || hasGoodVision)
-console.log(!hasDriversLicence)
+// const hasDriversLicence = true;
+// const hasGoodVision = false;
+// console.log(hasDriversLicence && hasGoodVision)
+// console.log(hasDriversLicence || hasGoodVision)
+// console.log(!hasDriversLicence)
 
-const shouldDrive = hasDriversLicence && hasGoodVision;
-console.log(shouldDrive)
+// const shouldDrive = hasDriversLicence && hasGoodVision;
+// console.log(shouldDrive)
+
+// const day = 'monday';
+// switch (day) {
+//     case 'monday':
+//         console.log('monday')
+//         break;
+//     case 'tuesday':
+//         console.log('tuesday');
+//         break;
+//     default:
+//         console.log('A DaY');
+//         break;
+// }
