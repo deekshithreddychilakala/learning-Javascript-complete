@@ -119,53 +119,104 @@
 // const f = jonas.calcAge;
 // f(); // Regular function call, this keyword is undefined in strict mode
 
-var firstName = 'Matilda';
+// var firstName = 'Matilda';
 
-const jonas = {
-    firstName: 'Jonas',
-    year: 1991,
-    calcAge: function () {
-        // console.log(this);
-        console.log(2037 - this.year);
+// const jonas = {
+//     firstName: 'Jonas',
+//     year: 1991,
+//     calcAge: function () {
+//         // console.log(this);
+//         console.log(2037 - this.year);
 
-        // Solution 1
-        // const self = this; // self or that
+//         // Solution 1
+//         // const self = this; // self or that
 
-        // const isMillenial = function () {
-        //     console.log(self);
-        //     console.log(self.year >= 1981 && self.year <= 1996);
-        //     // console.log(this.year >= 1981 && this.year <= 1996);
-        // }
+//         // const isMillenial = function () {
+//         //     console.log(self);
+//         //     console.log(self.year >= 1981 && self.year <= 1996);
+//         //     // console.log(this.year >= 1981 && this.year <= 1996);
+//         // }
 
-        // Solution 2
-        const isMillenial = () => {
-            console.log(this);
-            console.log(this.year >= 1981 && this.year <= 1996);
-        }
+//         // Solution 2
+//         const isMillenial = () => {
+//             console.log(this);
+//             console.log(this.year >= 1981 && this.year <= 1996);
+//         }
 
-        isMillenial();
-    },
+//         isMillenial();
+//     },
 
-    greet: () => {
-        console.log(this);
-        console.log(`Hey ${this.firstName}`);
-    }
+//     greet: () => {
+//         console.log(this);
+//         console.log(`Hey ${this.firstName}`);
+//     }
+// }
+
+// // jonas.greet();
+// jonas.calcAge();
+
+// // Arguments keyword
+// const addExpr = function (a, b) {
+//     console.log(arguments);
+//     return a + b;
+// }
+
+// addExpr(2, 5);
+
+// var addArrow = (a, b) => {
+//     console.log(arguments);
+//     return a + b;
+// }
+
+// addArrow(2, 5);
+
+///////////////////////////////////////
+// Object References in Practice (Shallow vs. Deep Copies)
+
+const jessica1 = {
+    firstName: 'Jessica',
+    lastName: 'Williams',
+    age: 27
+};
+
+function marryPerson(originalPerson, newLastName) {
+    originalPerson.lastName = newLastName;
+    return originalPerson;
 }
 
-// jonas.greet();
-jonas.calcAge();
+const marriedJessica = marryPerson(jessica1, 'Davis');
 
-// Arguments keyword
-const addExpr = function (a, b) {
-    console.log(arguments);
-    return a + b;
-}
+// const marriedJessica = jessica;
+// marriedJessica.lastName = 'Davis';
+// console.log('Before marriage:', jessica1);
+// console.log('After marriage:', marriedJessica);
 
-addExpr(2, 5);
+// jessica = { x: 1, y: 2 }; // Error because jessica is a const variable
 
-var addArrow = (a, b) => {
-    console.log(arguments);
-    return a + b;
-}
+// jessica.age = 30;
 
-addArrow(2, 5);
+// Copying objects
+const jessica = {
+    firstName: 'Jessica',
+    lastName: 'Williams',
+    age: 27,
+    family: ['Alice', 'Bob']
+};
+
+// Shallow copy
+const jessicaCopy = { ...jessica };
+jessicaCopy.lastName = 'Davis';
+
+// jessicaCopy.family.push('Mary');
+// jessicaCopy.family.push('John');
+
+// console.log('Before:', jessica);
+// console.log('After:', jessicaCopy);
+
+// Deep copy or Deep clone
+const jessicaClone = structuredClone(jessica);
+jessicaClone.family.push('John');
+jessicaClone.family.push('Mary');
+
+console.log('Original:', jessica);
+console.log('Clone:', jessicaClone);
