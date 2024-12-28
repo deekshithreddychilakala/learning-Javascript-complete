@@ -490,39 +490,76 @@ const restaurant = {
 
 // console.log(new Set('Venkata Deekshith Reddy Chilakala').size);
 
-const italianFoods = new Set([
-  'pasta',
-  'gnocchi',
-  'tomatoes',
-  'olive oil',
-  'garlic',
-  'basil'
-]);
+// const italianFoods = new Set([
+//   'pasta',
+//   'gnocchi',
+//   'tomatoes',
+//   'olive oil',
+//   'garlic',
+//   'basil'
+// ]);
 
-const mexicanFoods = new Set([
-  'tortillas',
-  'beans',
-  'rice',
-  'tomatoes',
-  'avocado',
-  'garlic'
-]);
+// const mexicanFoods = new Set([
+//   'tortillas',
+//   'beans',
+//   'rice',
+//   'tomatoes',
+//   'avocado',
+//   'garlic'
+// ]);
 
-// Intersection
-const commonFoods = italianFoods.intersection(mexicanFoods);
-console.log(commonFoods);
+// // Intersection
+// const commonFoods = italianFoods.intersection(mexicanFoods);
+// console.log(commonFoods);
 
-// Union
-const italianMexicanFoods = italianFoods.union(mexicanFoods);
-console.log(italianMexicanFoods);
+// // Union
+// const italianMexicanFoods = italianFoods.union(mexicanFoods);
+// console.log(italianMexicanFoods);
 
-// Difference
-const uniqueItalianFoods = italianFoods.difference(mexicanFoods);
-console.log('Difference Italian', uniqueItalianFoods);
+// // Difference
+// const uniqueItalianFoods = italianFoods.difference(mexicanFoods);
+// console.log('Difference Italian', uniqueItalianFoods);
 
-const uniqueMexicanFoods = mexicanFoods.difference(italianFoods);
-console.log('Difference Mexican', uniqueMexicanFoods);
+// const uniqueMexicanFoods = mexicanFoods.difference(italianFoods);
+// console.log('Difference Mexican', uniqueMexicanFoods);
 
-// Symmetric Difference
-const allFoods = italianFoods.symmetricDifference(mexicanFoods);
-console.log(allFoods);
+// // Symmetric Difference
+// const allFoods = italianFoods.symmetricDifference(mexicanFoods);
+// console.log(allFoods);
+
+
+// MAPS: Fundamentals
+const rest = new Map();
+rest.set('name', 'Classico Italiano');
+rest.set(1, 'Firenze, Italy');
+console.log(rest.set(2, 'Lisbon, Portugal'));
+
+rest.set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+  .set('open', 11)
+  .set('close', 23)
+  .set(true, 'We are open')
+  .set(false, 'We are closed');
+
+// console.log(rest.get('name'));
+// console.log(rest.get(true));
+// console.log(rest.get(1));
+
+const time = 21;
+console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
+
+console.log(rest.has('categories'));
+rest.delete(2);
+// rest.clear();
+console.log(rest.size);
+
+rest.set([1, 2], 'Test');
+console.log(rest);
+
+console.log(rest.get([1, 2]));
+
+const arr = [1, 2];
+rest.set(arr, 'Test');
+console.log(rest.get(arr));
+
+// MAPS: Iteration
+
