@@ -459,33 +459,70 @@ const restaurant = {
 
 // SETS
 
-const ordersSet = new Set(['Pasta', 'Pizza', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
-console.log(ordersSet);
-
-console.log(new Set('Jonas'));
-
-console.log(ordersSet.size);
-
-console.log(ordersSet.has('Pizza'));
-console.log(ordersSet.has('Bread'));
-
-ordersSet.add('Garlic Bread');
-ordersSet.add('Garlic Bread');
-console.log(ordersSet);
-
-ordersSet.delete('Risotto');
-console.log(ordersSet);
-
-// ordersSet.clear();
+// const ordersSet = new Set(['Pasta', 'Pizza', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
 // console.log(ordersSet);
 
-for (const order of ordersSet) console.log(order);
+// console.log(new Set('Jonas'));
 
-// Example
-const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
-const staffUnique = [...new Set(staff)];
-console.log(staffUnique);
+// console.log(ordersSet.size);
 
-console.log(new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size)
+// console.log(ordersSet.has('Pizza'));
+// console.log(ordersSet.has('Bread'));
 
-console.log(new Set('Venkata Deekshith Reddy Chilakala').size);
+// ordersSet.add('Garlic Bread');
+// ordersSet.add('Garlic Bread');
+// console.log(ordersSet);
+
+// ordersSet.delete('Risotto');
+// console.log(ordersSet);
+
+// // ordersSet.clear();
+// // console.log(ordersSet);
+
+// for (const order of ordersSet) console.log(order);
+
+// // Example
+// const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+// const staffUnique = [...new Set(staff)];
+// console.log(staffUnique);
+
+// console.log(new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size)
+
+// console.log(new Set('Venkata Deekshith Reddy Chilakala').size);
+
+const italianFoods = new Set([
+  'pasta',
+  'gnocchi',
+  'tomatoes',
+  'olive oil',
+  'garlic',
+  'basil'
+]);
+
+const mexicanFoods = new Set([
+  'tortillas',
+  'beans',
+  'rice',
+  'tomatoes',
+  'avocado',
+  'garlic'
+]);
+
+// Intersection
+const commonFoods = italianFoods.intersection(mexicanFoods);
+console.log(commonFoods);
+
+// Union
+const italianMexicanFoods = italianFoods.union(mexicanFoods);
+console.log(italianMexicanFoods);
+
+// Difference
+const uniqueItalianFoods = italianFoods.difference(mexicanFoods);
+console.log('Difference Italian', uniqueItalianFoods);
+
+const uniqueMexicanFoods = mexicanFoods.difference(italianFoods);
+console.log('Difference Mexican', uniqueMexicanFoods);
+
+// Symmetric Difference
+const allFoods = italianFoods.symmetricDifference(mexicanFoods);
+console.log(allFoods);
