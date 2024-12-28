@@ -342,26 +342,54 @@ const restaurant = {
 // console.log([...menu.entries()]);
 
 // optional chaining
-console.log(restaurant.openingHours?.mon?.open);
+// console.log(restaurant.openingHours?.mon?.open);
 
-const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+// const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
-for (const day of days) {
-  const open = restaurant.openingHours[day]?.open ?? 'closed';
-  console.log(`On ${day}, we open at ${open}`);
-}
+// for (const day of days) {
+//   const open = restaurant.openingHours[day]?.open ?? 'closed';
+//   console.log(`On ${day}, we open at ${open}`);
+// }
 
-console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
-console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method does not exist');
+// console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
+// console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method does not exist');
 
-// optional chaining on arrays
-const users = [
-  {
-    name: 'Jonas',
-    email: 'hello@jonas.io'
-  }
-];
+// // optional chaining on arrays
+// const users = [
+//   {
+//     name: 'Jonas',
+//     email: 'hello@jonas.io'
+//   }
+// ];
 
-console.log(users[0]?.name ?? 'User array empty');
-console.log(users[1]?.name ?? 'User array empty');
+// console.log(users[0]?.name ?? 'User array empty');
+// console.log(users[1]?.name ?? 'User array empty');
 
+// Looping Objects: Object Keys, Values, and Entries
+
+// Property NAMES
+// const properties = Object.keys(openingHours);
+// console.log(properties);
+
+// let openStr = `We are open on ${properties.length} days: `;
+
+// for (const day of properties) {
+//   openStr += `${day}, `;
+// }
+// console.log(openStr);
+
+// for (const day of Object.keys(openingHours)) {
+//   console.log(day);
+// }
+
+// // Property VALUES
+// const values = Object.values(openingHours);
+// console.log(values);
+
+// // Entire object
+// const entries = Object.entries(openingHours);
+// console.log(entries);
+
+// for (const [day, { open, close }] of entries) {
+//   console.log(`On ${day} we open at ${open} and close at ${close}`);
+// }
