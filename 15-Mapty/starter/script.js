@@ -277,6 +277,11 @@ class App {
             // this.renderWorkoutMarker(workout)
         })
     }
+
+    reset() {
+        localStorage.removeItem('workouts');
+        location.reload();
+    }
 }
 
 
